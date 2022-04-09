@@ -10,7 +10,7 @@ export type RootStackParamList = {
 
 const Navigation = createNativeStackNavigator<RootStackParamList>();
 
-const Routes = () => {
+const Routes: React.FC = () => {
   return (
     <Navigation.Navigator
       screenOptions={{
