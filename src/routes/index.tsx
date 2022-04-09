@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Welcome} from '../pages';
+import {Welcome, Home} from '../pages';
 
 export type RootStackParamList = {
   Welcome: undefined;
@@ -17,6 +17,7 @@ const Routes = () => {
         headerShown: false,
       }}>
       <Navigation.Screen name="Welcome" component={Welcome} />
+      <Navigation.Screen name="Home" component={Home} />
     </Navigation.Navigator>
   );
 };
