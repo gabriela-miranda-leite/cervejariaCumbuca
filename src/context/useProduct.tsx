@@ -88,6 +88,7 @@ const ProductProvider = ({children}: ProductProviderProps) => {
     });
 
     setProductList(filteredProducts);
+    setAsyncStorage(filteredProducts);
   };
 
   const updateProduct = (indexProduct: number, quantity: number) => {
