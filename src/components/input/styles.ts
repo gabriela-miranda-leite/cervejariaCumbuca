@@ -16,6 +16,7 @@ export const Label = styled.Text`
 
 export const Input = styled(TextInput)`
   font-family: 'Poppins-Italic';
+  color: ${theme.colors.text.dark};
   font-size: 12px;
   height: 30px;
   padding: 0px 5px;

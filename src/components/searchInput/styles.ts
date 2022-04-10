@@ -24,4 +24,5 @@ export const SearchInput = styled(TextInput)`
   flex: 1;
   font-family: 'Poppins-Italic';
   font-size: 14px;
+  color: ${theme.colors.text.dark};
 `;
