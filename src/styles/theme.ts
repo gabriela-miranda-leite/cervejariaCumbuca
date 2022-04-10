@@ -8,7 +8,7 @@ export const theme = {
     background: '#FFF1E6',
     backgroundLight: '#FEE8D6',
     card: '#FCD2AF',
-    info: '#c1c1c1',
+    error: '#BC4B51',
   },
   fonts: {
     regular: 'Poppins-Regular',
