@@ -1,9 +1,9 @@
-<div align="center"><img src="./.github/logo.png" /></div>
+<div align="center"><img src="./.gitHub/logo.png" /></div>
 
 # Cumbuca Cervejaria 🍻
 #### Projeto de armazenamento de produtos 🚀
 
-![Home](./.github/banner.png)
+![Home](./.gitHub/banner.png)
 
 ### 🧪 Tecnologias Utilizadas
 - React Native
@@ -21,7 +21,7 @@ git clone https://github.com/Gabriela-Leite/cervejariaCumbuca.git
 
 #### instalar as dependências
 ```bash
-yarn ou npm install
+npm install
 ```
 
 #### rodando o projeto
