@@ -5,6 +5,10 @@
 
 ![Home](./.gitHub/banner.png)
 
+
+#### Figma
+ [link](https://www.figma.com/file/39LlvWFUWzsNS900ULBGFd/Desafio-Cumbuca?node-id=0%3A1)
+
 ### 🧪 Tecnologias Utilizadas
 - React Native
 - Typescript
