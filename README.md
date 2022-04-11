@@ -5,15 +5,15 @@
 
 ![Home](./.github/banner.png)
 
-### 🧪Tecnologias Utilizadas
+### 🧪 Tecnologias Utilizadas
 - React Native
 - Typescript
 - Styled-component
 - Async Storage
 - Formik
 - Yup
-
-## 🚀Como usar
+ 
+## 🚀 Como usar
 
 #### clonar o repositório
 ```bash
