@@ -56,7 +56,7 @@ export const MultiButtonContainer = styled.View`
 
 export const QuantityContainer = styled.View`
   height: 20px;
-  width: 20px;
+  width: 30px;
 
   align-items: center;
   justify-content: center;
