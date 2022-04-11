@@ -17,7 +17,7 @@
 
 #### clonar o repositório
 ```bash
-git clone https://github.com/Gabriela-Leite/my-porfolio.git
+git clone https://github.com/Gabriela-Leite/cervejariaCumbuca.git
 
 #### instalar as dependências
 ```bash
