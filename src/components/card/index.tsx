@@ -59,7 +59,7 @@ export const Card: React.FC<CardProps> = ({productInfo}: CardProps) => {
           )}
 
           <S.QuantityContainer>
-            <S.QuantityProduct>{quantityProduct}</S.QuantityProduct>
+            <S.QuantityProduct>{quantity}</S.QuantityProduct>
           </S.QuantityContainer>
 
           <S.Button activeOpacity={0.7} onPress={plusProduct}>
@@ -67,7 +67,7 @@ export const Card: React.FC<CardProps> = ({productInfo}: CardProps) => {
           </S.Button>
         </S.MultiButtonContainer>
         <S.ValueTotalProducts>
-          R$ {totalRef.current.toFixed(2).replace('.', ',')}
+          R$ {(unityProduct * quantity).toFixed(2).replace('.', ',')}
         </S.ValueTotalProducts>
       </S.HalfWrapper>
     </S.Container>
