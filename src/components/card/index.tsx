@@ -20,16 +20,16 @@ export const Card: React.FC<CardProps> = ({productInfo}: CardProps) => {
   const [quantityProduct, setQuantityProduct] = useState(quantity);
 
   const plusProduct = useCallback(() => {
-    setQuantityProduct(quantityProduct + 1);
-    totalRef.current = (quantityProduct + 1) * unityProduct;
-    updateProduct(productInfo.indexProduct, quantityProduct + 1);
-  }, [productInfo.indexProduct, quantityProduct, unityProduct, updateProduct]);
+    setQuantityProduct(quantity + 1);
+    totalRef.current = (quantity + 1) * unityProduct;
+    updateProduct(productInfo.indexProduct, quantity + 1);
+  }, [productInfo.indexProduct, quantity, unityProduct, updateProduct]);
 
   const minusProduct = useCallback(() => {
-    setQuantityProduct(quantityProduct - 1);
-    totalRef.current = (quantityProduct - 1) * unityProduct;
-    updateProduct(productInfo.indexProduct, quantityProduct - 1);
-  }, [productInfo.indexProduct, quantityProduct, unityProduct, updateProduct]);
+    setQuantityProduct(quantity - 1);
+    totalRef.current = (quantity - 1) * unityProduct;
+    updateProduct(productInfo.indexProduct, quantity - 1);
+  }, [productInfo.indexProduct, quantity, unityProduct, updateProduct]);
 
   const deleteProduct = useCallback(() => {
     removeProduct(productInfo.indexProduct);
@@ -39,7 +39,7 @@ export const Card: React.FC<CardProps> = ({productInfo}: CardProps) => {
     <S.Container>
       <S.HalfWrapper>
         <S.NameProduct numberOfLines={1}>
-          {productInfo.nameProduct}
+          {productInfo.indexProduct + 1}. {productInfo.nameProduct}
         </S.NameProduct>
         <S.ValueUnityProduct>
           R$ {unityProduct.toFixed(2).replace('.', ',')}
@@ -48,7 +48,7 @@ export const Card: React.FC<CardProps> = ({productInfo}: CardProps) => {
 
       <S.HalfWrapper rightSide>
         <S.MultiButtonContainer>
-          {quantityProduct - 1 === 0 ? (
+          {quantity - 1 === 0 ? (
             <S.Button trash activeOpacity={0.7} onPress={deleteProduct}>
               <S.IconMulti name="trash-2" size={16} color="#FFFFFF" />
             </S.Button>
