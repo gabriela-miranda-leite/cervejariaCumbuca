@@ -14,8 +14,8 @@
 - Typescript
 - Styled-component
 - Async Storage
-- Formik
 - Yup
+- React Navigation
  
 ## 🚀 Como usar
 
@@ -37,8 +37,6 @@ e
 ```bash
 npx react-native run-android
 ```
-
-
 
 
 
